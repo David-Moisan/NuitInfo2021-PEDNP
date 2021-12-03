@@ -2,8 +2,8 @@
 $db="dunkerque";
 $dbhost="localhost";
 $dbport=3306;
-$dbuser="username";
-$dbpasswd="password";
+$dbuser="myadmin";
+$dbpasswd="Serveur123";
 
 $pdo = new PDO('mysql:host='.$dbhost.';port='.$dbport.';dbname='.$db.'', $dbuser, $dbpasswd);
 $pdo->exec("SET CHARACTER SET utf8");
