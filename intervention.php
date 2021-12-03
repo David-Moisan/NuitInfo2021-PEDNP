@@ -10,7 +10,7 @@ $pdo = new PDO('mysql:host='.$dbhost.';port='.$dbport.';dbname='.$db.'', $dbuser
 echo "Passage en UTF8";
 $pdo->exec("SET CHARACTER SET utf8");
 echo "Prepare";
-$stmt = $pdo->prepare("SELECT IdOpe, NomOpe, BateauSauvetage, BateauSecouru, DateOpe, Description, Lieu FROM Intervention i");
+$stmt = $pdo->prepare("SELECT IdOpe, NomOpe, BateauSauvetage, BateauSecouru, DateInte, Description, Lieu FROM Intervention i");
 echo "Execute";
 $stmt->execute();
 echo "Execute done";
